@@ -101,6 +101,7 @@
             this.Controls.Add(this.txtTelegrama);
             this.Controls.Add(this.label2);
             this.Name = "Form1";
+            this.Text = "CBT2425";
             this.ResumeLayout(false);
             this.PerformLayout();
 
