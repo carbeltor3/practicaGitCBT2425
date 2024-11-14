@@ -31,11 +31,11 @@ namespace ejercicioTelegrama
             //Leo el telegrama 
             textoTelegrama = txtTelegrama.Text;
             // telegrama urgente?
-            if (chkUrgente.Checked)
+            if (rbtUrgente.Checked)
             {
                 tipoTelegrama = 'u';
             }
-            else
+            else if(rbtOrdinario.Checked)
             {
                 //si no esta marcado chkUrgente el tipoTelegrama es o
                 tipoTelegrama = 'o';
@@ -50,7 +50,7 @@ namespace ejercicioTelegrama
             {
                 if (numPalabras <= 10)
                 {
-                    coste = 2.5;
+                    coste = 3;
                 }
                 else
                 {
@@ -64,7 +64,7 @@ namespace ejercicioTelegrama
                 {
                     if (numPalabras <= 10)
                     {
-                        coste = 5;
+                        coste = 6;
                     }
                     else
                     {
@@ -79,6 +79,7 @@ namespace ejercicioTelegrama
                 txtPrecio.Text = coste.ToString() + " euros";
             }
 
-        }
+        
+    }
     }
 
