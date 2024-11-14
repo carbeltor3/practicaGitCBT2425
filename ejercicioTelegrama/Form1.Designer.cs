@@ -54,6 +54,7 @@
             this.txtTelegrama.Name = "txtTelegrama";
             this.txtTelegrama.Size = new System.Drawing.Size(459, 122);
             this.txtTelegrama.TabIndex = 1;
+            this.txtTelegrama.TextChanged += new System.EventHandler(this.txtTelegrama_TextChanged);
             // 
             // label3
             // 
@@ -116,7 +117,6 @@
             this.Controls.Add(this.label2);
             this.Name = "Form1";
             this.Text = "CBT2425";
-            
             this.ResumeLayout(false);
             this.PerformLayout();
 
